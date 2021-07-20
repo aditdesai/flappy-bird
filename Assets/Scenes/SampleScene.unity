@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.080313474, g: 0.09970753, b: 0.3011242, a: 1}
+  m_IndirectSpecularColor: {r: 0.10062016, g: 0.124993294, b: 0.31767738, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -583,8 +583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1192481832}
-  UpwardsForceMultiplier: 1100
-  ForwardForceMultiplier: 1
+  UpwardsForceMultiplier: 1200
+  ForwardForceMultiplier: 0.9
   aud: {fileID: 1192481835}
   jumpSound: {fileID: 8300000, guid: b5ef7644f61d67b47b5b67660e669eaa, type: 3}
   scoreText: {fileID: 222363545}

@@ -35,6 +35,7 @@ public class BirdMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 //Debug.Log("pressed");
+
                 rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
                 rb.AddForce(Vector3.up * UpwardsForceMultiplier);
 
@@ -48,13 +49,12 @@ public class BirdMovement : MonoBehaviour
                 hasStarted = true;
                 rb.useGravity = true;
                 rb.AddForce(Vector3.up * UpwardsForceMultiplier);
-                rb.AddForce(Vector3.forward * 3 * ForwardForceMultiplier);
+                rb.AddForce(Vector3.forward * 5f, ForceMode.Impulse);
 
                 aud.PlayOneShot(jumpSound);
             }
         }
     }
-    
 
     void HandleRotation()
     {
